@@ -21,7 +21,7 @@ import java.util.concurrent.Future;
 public class AnalitzadorPrincipal {
     
     // Fitxer on es redirigeix el stderr dels fills
-    static final File FITXER_ERRORS = new File("error_filtre.log");
+    static final File FITXER_ERRORS = new File("errors_filtre.log");
     
     static final String TEXT_PROVA =
             "2024-05-01 10:00:01 INFO  Servidor iniciat\n"
@@ -34,7 +34,8 @@ public class AnalitzadorPrincipal {
             + "2024-05-01 10:04:25 ERROR Fitxer no trobat\n"
             + "2024-05-01 10:05:30 WARNING Certificat proper a caducar\n"
             + "2024-05-01 10:06:35 WARNING Intent de login fallit\n"
-            + "2024-05-01 10:07:40 INFO  Fi de la jornada\n";
+            + "2024-05-01 10:07:40 INFO  Fi de la jornada\n"
+            ;
 
     // Resultat d'un fill: valor comptat + codi de sortida.
     static class ResultatFill {
